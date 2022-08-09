@@ -1,0 +1,83 @@
+@import url("//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css");
+
+/* style */
+
+.print-slide-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 5rem;
+    position: relative;
+}
+
+.slick-arrow {
+    position: absolute;
+    line-height: 0;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev {
+    left: 0;
+    &:before {
+        display: inline-block;
+        content: "\f104";
+        font: normal normal normal 5rem/1 FontAwesome;
+        color: black;
+    }
+}
+
+.slick-next {
+    right: 0;
+    &:before {
+        display: inline-block;
+        content: "\f105";
+        font: normal normal normal 5rem/1 FontAwesome;
+        color: black;
+    }
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 5px;
+    height: 5px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: black;
+    border-radius: 100%;
+}
